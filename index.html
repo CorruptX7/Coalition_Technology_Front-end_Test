@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coalition Technology</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <!-- header -->
+        <section>
+            <!-- desktop -->
+            <header class="desktop-header">
+                <nav>
+                    <div class="nav-bar">
+                        <div>
+                            <img src="images/logo.png" alt="logo" width="40"
+                                height="40">
+                        </div>
+                        <div>
+                            <a class="history" href="#history">01.
+                                HISTORY</a>
+                            <a href="#team">02. TEAM</a>
+                        </div>
+                    </div>
+                </nav>
+                <img src="images/hero-background.png" class="background" />
+
+            </header>
+            <!-- mobile -->
+            <header>
+                <nav class="mobile-header">
+                    <div class="nav-bar">
+                        <div>
+                            <img src="images/logo.png" alt="logo" width="40"
+                                height="40">
+                        </div>
+                        <div>
+                            <a class="history" href="#history">01.
+                                HISTORY</a>
+                            <a href="#team">02. TEAM</a>
+                        </div>
+                    </div>
+                </nav>
+
+            </header>
+        </section>
+
+        <!-- second nav -->
+        <section>
+            <nav>
+                <div class="nav-bar-two">
+                    <div>
+                        <img id="logo-two"
+                            src="images/logo.png" alt="logo" width="40"
+                            height="40">
+                        <img class="logo"
+                            src="images/logo-text.png" alt="logo" width="120"
+                            height="40">
+                    </div>
+                    <div>
+                        <a class="history-2" href="#history">01. HISTORY</a>
+                        <a href="#team">02. TEAM</a>
+                    </div>
+                </div>
+            </nav>
+
+            <img src="images/hero-background.png" class="background" />
+        </section>
+
+        <!-- history -->
+        <section class="history-section" id="history">
+            <div class="text-container">
+                <img src="images/title-history.png" alt="logo" width="251"
+                    height="133">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Proin in ante viverra, rutrum erat rutrum, consectetur mi.
+                    Proin at <br> maximus est. Nullam purus ex, iaculis sed erat
+                    sed,
+                    blandit tincidunt quam. Cras scelerisque id quam sed
+                    dignissim <br> Pellentesque urna nunc, gravida quis
+                    hendrerit ac,
+                    tristique ut quam. Vivamus suscipit dignissim tortor nec
+                    congue. </p>
+            </div>
+
+            <div class="gallery">
+                <div class="gallery-container">
+                    <div class="gallery-image slide">
+                        <img src="images/carousel-image-1.png"
+                            alt="gallery-image"
+                            width="220" height="135">
+                    </div>
+                    <div class="gallery-image slide">
+                        <img src="images/carousel-image-2.png"
+                            alt="gallery-image"
+                            width="220" height="135">
+                    </div>
+                    <div class="gallery-image slide">
+                        <img src="images/carousel-image-1.png"
+                            alt="gallery-image"
+                            width="220" height="135">
+                    </div>
+                    <div class="gallery-image slide">
+                        <img src="images/carousel-image-2.png"
+                            alt="gallery-image"
+                            width="220" height="135">
+                    </div>
+
+                    <div class="dots">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- climb -->
+        <section class="climb-section" id="team">
+            <div class="climb-container">
+                <img src="images/title-climb.png" alt="logo" width="251"
+                    height="133">
+                <p>Cras scelerisque id quam sed dignissim Pellentesque urna
+                    nunc, gravida quis hendrerit ac, <br> tristique ut quam.
+                    Vivamus
+                    suscipit dignissim tortor nec congue. </p>
+            </div>
+        </section>
+
+        <!-- schedule -->
+        <section class="schedule">
+            <div class="tab-container">
+                <div class="tabs">
+                    <p class="tab-links active-link tab-1"
+                        onclick="opentab('mountain-1')">MOUNTAIN 1</p>
+                    <p class="tab-links"
+                        onclick="opentab('mountain-2')">MOUNTAIN 2</p>
+                </div>
+            </div>
+            <div class="tab-item active-tab" id="mountain-1">
+                <div class="schedule-container">
+                    <img class="schedule-image"
+                        src="images/schedule-image-1.png" />
+                    <img class="schedule-list"
+                        src="images/schedule-1.png" />
+                </div>
+            </div>
+            <div class="tab-item" id="mountain-2">
+                <div class="schedule-container">
+                    <img class="schedule-image"
+                        src="images/schedule-image-2.png" />
+                    <img class="schedule-list"
+                        src="images/schedule-2.png" />
+                </div>
+            </div>
+        </section>
+
+        <!-- schedule mobile -->
+        <section class="schedule-mobile">
+            <button class="accordion">MOUNTAIN 1</button>
+            <div class="panel">
+                <div class="schedule-container">
+                    <img class="schedule-image"
+                        src="images/schedule-image-1.png" />
+                    <img class="schedule-list"
+                        src="images/schedule-1.png" />
+                </div>
+            </div>
+
+            <button class="accordion">MOUNTAIN 2</button>
+            <div class="panel">
+                <div class="schedule-container">
+                    <img class="schedule-image"
+                        src="images/schedule-image-2.png" />
+                    <img class="schedule-list"
+                        src="images/schedule-2.png" />
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <section class="footer">
+            <div class="footer-content">
+                <div>
+                    <img src="images/footer-logo.png" alt="footer-logo">
+                </div>
+                <div class="footer-text">
+                    COPYRIGHT 2016. ALL RIGHTS RESERVED.
+                </div>
+            </div>
+        </section>
+
+        <script src="js/slideshow.js"></script>
+        <script src="js/tabs.js"></script>
+        <script src="js/accordion.js"></script>
+    </body>
+</html>
